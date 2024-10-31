@@ -22,7 +22,7 @@ header {
 
 /* Navigation */
 header nav {
-    margin-top: 10px; /* Separación entre el título y el menú */
+    margin-top: 10px;
 }
 
 header nav ul {
@@ -46,17 +46,21 @@ header nav ul li a:hover {
 }
 
 /* Main content */
+main {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
 .left-sidebar {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
     background-color: #ccc;
     padding: 20px;
 }
 
-/* Aside content */
 .right-sidebar {
     grid-column: 3 / 4;
-    grid-row: 2 / 3;
     background-color: white;
     padding: 20px;
 }
@@ -69,3 +73,4 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
