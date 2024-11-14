@@ -2,10 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Carlos Poma</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals by Carlos Poma."
+    />
+    <meta name="author" content="Carlos Poma" />
+    <link rel="stylesheet" href="/styles/base.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header>
+      <h1>WDD131: Dynamic Web Fundamentals - Carlos Poma</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/carlospoma23/">LinkedIn</a>
+        </li>
+        <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+        <li>
+          <a
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+            >Favorite Scripture</a
+          >
+        </li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+
+    <main class="card">
+      <section class="left-sidebar">
+        <h2>About me</h2>
+        <div class="bio-content">
+          <p>
+            My name is Carlos Poma, but people on the USA called me Charles, I
+            was born in Lima, Peru and live with my family in Provo, Utah. I am
+            currently working as Tier 2 Technician at American Company who has
+            presence in USA and Mexico. My family are my world and I love
+            spending time with them. I love play soccer, play the guitar and
+            work with computers.
+          </p>
+          <img
+            src="images/carlos-picture.JPG"
+            alt="Photo of Carlos"
+            class="bio-photo"
+          />
+        </div>
+        <h3>Lima, Peru</h3>
+        <div class="country-info">
+          <img
+            src="images/peru-flag.png"
+            alt="Flag of Peru"
+            class="flag-photo"
+          />
+          <p>
+            Peru is the third largest country in South America, after Brazil and
+            Argentina. It is made up of a variety of landscapes, from mountains
+            and beaches to deserts and rain forests. Most people live along the
+            coast of the Pacific Ocean, where the capital, Lima, is located.
+            Lima is the gastronomic capital, not only of Peru but also of South
+            America (and, why not say it, of the whole world, soon). Anyone who
+            arrives in Lima is enchanted by the varied, delicious, and
+            prestigious food served at its table; with ancient recipes, dishes
+            fused with other cultures, and a truly unique flavor.
+          </p>
+        </div>
+      </section>
+      <section class="right-sidebar">
+        <h2>Web Dev Resouces</h2>
+        <div class="centered-list">
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/css/">W3 Schools</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">
+                Developer Mozilla</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.udemy.com/course/understanding-html-and-css/"
+              >
+                Udemy</a
+              >
+            </li>
+            <li>
+              <a href="https://codepen.io/matkat/pen/eQENmb"> Codepen</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Carlos Poma - Utah - USA</p>
+      <p id="lastModified">Last Modifification:</p>
+    </footer>
+    <script src="scripts/getdate.js" defer></script>
   </body>
 </html>
